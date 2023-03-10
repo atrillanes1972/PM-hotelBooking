@@ -4,10 +4,6 @@ df = pd.read_csv("hotels.csv", dtype={"id": str})
 df_cards = pd.read_csv("cards.csv", dtype=str).to_dict(orient="records")
 df_cards_security = pd.read_csv("card_security.csv", dtype=str)
 
-class User:
-    def view_hotels(self):
-        pass
-
 
 class Hotel:
     def __init__(self, hotel_id):
